@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://v18ccsdh3dle"]
+
+[ext_resource type="Script" uid="uid://cs3dhwfjvrcyt" path="res://building_menu.gd" id="1_sr6m8"]
+
+[node name="BuildingMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sr6m8")
+
+[node name="LivingQuartersButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 204.0
+offset_top = 129.0
+offset_right = 341.0
+offset_bottom = 266.0
+text = "living"
+
+[node name="OtherBuilding" type="Button" parent="."]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 74.0
+offset_right = 168.0
+offset_bottom = 230.0
+text = "not real"

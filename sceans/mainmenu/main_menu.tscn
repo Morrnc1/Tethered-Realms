@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpkj2ps2t1wct"]
+
+[ext_resource type="FontFile" uid="uid://bgwks7f737ype" path="res://assets/fonts/Abaddon_Fonts_v1.2/Abaddon Bold.ttf" id="1_itg5a"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.207843, 0.635294, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 236.0
+offset_top = 185.0
+offset_right = 924.0
+offset_bottom = 298.0
+theme_override_fonts/font = ExtResource("1_itg5a")
+theme_override_font_sizes/font_size = 100
+text = "Tethered Realms"
+
+[node name="PlayButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = 81.0
+offset_right = 4.0
+offset_bottom = 89.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="PlayButton"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="SavesButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -124.0
+offset_top = 109.0
+offset_right = -116.0
+offset_bottom = 117.0
+grow_horizontal = 0
+
+[node name="Label" type="Label" parent="SavesButton"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="SettingsButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 122.0
+offset_top = 111.0
+offset_right = 130.0
+offset_bottom = 119.0
+
+[node name="CreditsButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 489.0
+offset_right = 148.0
+offset_bottom = 497.0

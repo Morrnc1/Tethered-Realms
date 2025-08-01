@@ -1,0 +1,78 @@
+[gd_scene load_steps=13 format=3 uid="uid://cjyup5ghfwy5u"]
+
+[ext_resource type="Script" uid="uid://dxbto5cnd66ot" path="res://sceans/base/building.gd" id="1_a5gk8"]
+[ext_resource type="PackedScene" uid="uid://o37pmj55a36s" path="res://assets/enviorment/KayKit_DungeonRemastered_1.1_FREE/Assets/gltf/floor_wood_large_dark.gltf" id="1_hefmi"]
+[ext_resource type="PackedScene" uid="uid://bgiarrjbgx163" path="res://assets/enviorment/KayKit_DungeonRemastered_1.1_FREE/Assets/gltf/wall_doorway.gltf" id="2_a5gk8"]
+[ext_resource type="PackedScene" uid="uid://cpjxam7g2g84b" path="res://assets/enviorment/KayKit_DungeonRemastered_1.1_FREE/Assets/gltf/wall.gltf" id="3_tmkq7"]
+[ext_resource type="PackedScene" uid="uid://7g6vac60yt88" path="res://assets/enviorment/KayKit_DungeonRemastered_1.1_FREE/Assets/gltf/wall_corner.gltf" id="4_l7pmv"]
+[ext_resource type="PackedScene" uid="uid://o5i6bxt8ip6j" path="res://assets/enviorment/KayKit_DungeonRemastered_1.1_FREE/Assets/gltf/floor_wood_small_dark.gltf" id="5_qae56"]
+[ext_resource type="PackedScene" uid="uid://bceov4ajr06rn" path="res://assets/enviorment/KayKit_DungeonRemastered_1.1_FREE/Assets/gltf/ceiling_tile.gltf" id="6_1esp4"]
+[ext_resource type="PackedScene" uid="uid://bkoxci7siypic" path="res://assets/enviorment/KayKit_DungeonRemastered_1.1_FREE/Assets/gltf/bed_frame.gltf" id="7_28e0p"]
+[ext_resource type="PackedScene" uid="uid://dqu4qje6necbj" path="res://assets/enviorment/KayKit_DungeonRemastered_1.1_FREE/Assets/gltf/box_small.gltf" id="8_ogd2v"]
+[ext_resource type="PackedScene" uid="uid://b6cyiym4snxh5" path="res://assets/enviorment/KayKit_DungeonRemastered_1.1_FREE/Assets/gltf/candle_lit.gltf" id="9_ust63"]
+[ext_resource type="PackedScene" uid="uid://bnmbtwwc8w0py" path="res://assets/enviorment/KayKit_DungeonRemastered_1.1_FREE/Assets/gltf/banner_patternA_yellow.gltf" id="10_4lyxu"]
+[ext_resource type="PackedScene" uid="uid://bcu75rd4pd8aq" path="res://assets/enviorment/KayKit_DungeonRemastered_1.1_FREE/Assets/gltf/shelf_small_candles.gltf" id="11_4am7b"]
+
+[node name="LivingQuarters" type="Node3D"]
+transform = Transform3D(-0.3, 0, 2.62268e-08, 0, 0.3, 0, -2.62268e-08, 0, -0.3, 0, 0, 0)
+script = ExtResource("1_a5gk8")
+
+[node name="floor_wood_large_dark2" parent="." instance=ExtResource("1_hefmi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08455, 0.00177813, -1.92013)
+
+[node name="floor_wood_large_dark3" parent="." instance=ExtResource("1_hefmi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.914, 0, -1.92)
+
+[node name="wall_doorway2" parent="." instance=ExtResource("2_a5gk8")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.585, 0, -1.922)
+
+[node name="wall_doorway3" parent="." instance=ExtResource("2_a5gk8")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.415, 0, -1.922)
+
+[node name="wall2" parent="." instance=ExtResource("3_tmkq7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.415, 0, 2)
+
+[node name="wall_corner2" parent="." instance=ExtResource("4_l7pmv")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.585, 0, 2)
+
+[node name="wall_corner3" parent="." instance=ExtResource("4_l7pmv")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.42, 0, 2)
+
+[node name="floor_wood_small_dark2" parent="." instance=ExtResource("5_qae56")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.915, 0, 1.085)
+
+[node name="floor_wood_small_dark3" parent="." instance=ExtResource("5_qae56")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.915, 0, 1.085)
+
+[node name="floor_wood_small_dark4" parent="." instance=ExtResource("5_qae56")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.085, 0, 1.085)
+
+[node name="floor_wood_small_dark5" parent="." instance=ExtResource("5_qae56")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.085, 0, 1.085)
+
+[node name="ceiling_tile2" parent="." instance=ExtResource("6_1esp4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.085, 4, -1.92)
+
+[node name="ceiling_tile4" parent="." instance=ExtResource("6_1esp4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.085, 4, -0.01)
+
+[node name="ceiling_tile3" parent="." instance=ExtResource("6_1esp4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.915, 4, -1.92)
+
+[node name="ceiling_tile5" parent="." instance=ExtResource("6_1esp4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.915, 4, 0.01)
+
+[node name="bed_frame2" parent="." instance=ExtResource("7_28e0p")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.26516, 0, 0.515171)
+
+[node name="box_small2" parent="." instance=ExtResource("8_ogd2v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.49199, 0, 0.899917)
+
+[node name="candle_lit2" parent="." instance=ExtResource("9_ust63")]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 2.5227, 0.869401, 0.895547)
+
+[node name="banner_patternA_yellow2" parent="." instance=ExtResource("10_4lyxu")]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -3.16277, 1.72218, 0.518464)
+
+[node name="shelf_small_candles2" parent="." instance=ExtResource("11_4am7b")]
+transform = Transform3D(-3.0598e-08, 0, -0.7, 0, 0.7, 0, 0.7, 0, -3.0598e-08, 3.33411, 1.89245, -3.48094)

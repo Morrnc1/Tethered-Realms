@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcbdsci3vfjgm"]
+
+[ext_resource type="Script" uid="uid://3wf8bc3nctqa" path="res://sceans/base/slot.gd" id="1_nhcyk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yh5uj"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_hbwrb"]
+
+[node name="Slot" type="Area3D" node_paths=PackedStringArray("build_position", "visual_mesh")]
+script = ExtResource("1_nhcyk")
+build_position = NodePath("BuildPosition")
+visual_mesh = NodePath("MeshInstance3D")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_yh5uj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_hbwrb")
+
+[node name="BuildPosition" type="Node3D" parent="."]

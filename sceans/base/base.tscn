@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://cg6qtcv6vstsn"]
+
+[ext_resource type="Script" uid="uid://cdlyc07th80ox" path="res://sceans/camera_3d.gd" id="1_yxn0t"]
+[ext_resource type="PackedScene" uid="uid://v18ccsdh3dle" path="res://sceans/ui/building_menu.tscn" id="2_1hoqj"]
+[ext_resource type="PackedScene" uid="uid://dcbdsci3vfjgm" path="res://sceans/base/slot.tscn" id="2_8pk7i"]
+
+[node name="Base" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.984808, 0.173648, 0, -0.173648, 0.984808, -0.187845, 0.968287, -134.81)
+projection = 1
+fov = 100.0
+size = 5.0
+script = ExtResource("1_yxn0t")
+min_x = -7.0
+max_x = 7.0
+min_y = -7.0
+max_y = 7.0
+border_color = Color(0, 0.605149, 0.663118, 1)
+print_zoom = true
+
+[node name="World" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -139.837)
+
+[node name="Slot" parent="World" instance=ExtResource("2_8pk7i")]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="BuildingMenu" parent="UI" instance=ExtResource("2_1hoqj")]
+visible = false
